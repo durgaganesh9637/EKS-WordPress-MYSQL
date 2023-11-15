@@ -4,6 +4,8 @@ this project involves deploying WordPress and MySQL on Amazon EKS.
 
 Clone this Repo
 
+encrypt your password - check the encryption process i have added there itself mysql/mysql-secret.yaml
+
 
 Check Replace 1 and 2 files 
 
