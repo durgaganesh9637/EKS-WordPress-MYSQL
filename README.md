@@ -23,3 +23,4 @@ kubectl apply -f Wordpress
 
 
 kubectl get all
+
