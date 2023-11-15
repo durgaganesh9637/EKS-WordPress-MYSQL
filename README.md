@@ -12,7 +12,7 @@ kubectl apply -f StorageClass.yaml
 kubectl apply -f mysql
 
 kubectl get all
-after mysql resources created(5 Minutes aftere)
+#after mysql resources created(5 Minutes aftere)
 
 kubectl apply -f wordpress
 
