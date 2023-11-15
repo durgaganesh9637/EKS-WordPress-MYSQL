@@ -1,7 +1,9 @@
 # EKS-WordPress-MYSQL
 this project involves deploying WordPress and MySQL on Amazon EKS.
 
-Change the Nodeaffinity labels as your node
+
+Change the Nodeaffinity labels as your node in the file
+mysql/mysql-PersistentVolume.yaml
   Here I am using my node name as a value you can give your node Hostname there only mysql pod will deploy.
     -     nodeSelectorTerms:
          - matchExpressions:
