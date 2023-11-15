@@ -11,11 +11,15 @@ Check Replace 1 and 2 files
 
 kubectl apply -f StorageClass.yaml
 
-kubectl apply -f mysql
+kubectl apply -f MySQL
+#To apply all files inside MySql folder
+
 
 kubectl get all
 #after mysql resources created(wait for 5 mins)
 
-kubectl apply -f wordpress
+kubectl apply -f Wordpress
+#To apply all files inside wordpress folder
+
 
 kubectl get all
