@@ -1,11 +1,11 @@
 # EKS-WordPress-MYSQL
 this project involves deploying WordPress and MySQL on Amazon EKS.
 
-
-Change the Nodeaffinity labels as your node in the file
 mysql/mysql-PersistentVolume.yaml
-  Here I am using my node name as a value you can give your node Hostname there only mysql pod will deploy.
-    -     nodeSelectorTerms:
+In the mysql-PersistentVolume.yaml file, find the section related to Node Affinity labels. 
+Look for the 'values' field under 'matchExpressions' and replace <- ip-10-0-127-96.ec2.internal>
+with the hostname of your specific node. 
+This step is crucial for directing the MySQL pod to deploy exclusively on the designated node. -     nodeSelectorTerms:
          - matchExpressions:
            - key: kubernetes.io/hostname
              operator: In
